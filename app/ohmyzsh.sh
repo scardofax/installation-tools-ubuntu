@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Instalar e configurar ZSH
 sudo apt-get install zsh -y
 sudo apt-get install git curl -y

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 wget https://aka.ms/downloadazcopy-v10-linux
 tar -xvf downloadazcopy-v10-linux
 

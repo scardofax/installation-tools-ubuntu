@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ## Lista dos mauses suportados
 # https://github.com/libratbag/libratbag/tree/master/data/devices
 
@@ -6,6 +8,9 @@ sudo apt install ratbagd
 
 # Instalar a Interface Grafica Piper
 sudo apt-add-repository ppa:libratbag-piper/piper-libratbag-git
+
+sudo apt-get update -y
+
 sudo apt install piper 
 
 

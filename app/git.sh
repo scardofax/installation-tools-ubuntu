@@ -1,4 +1,3 @@
-sudo apt-get install git
+#!/bin/bash
 
-git config --global user.name "Juliano Martins"
-git config --global user.email "julianogm@ciandt.com"
+sudo apt-get install git

@@ -1,1 +1,3 @@
-sudo apt-get install code
+#!/bin/bash
+
+sudo snap install --classic code
