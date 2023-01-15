@@ -17,6 +17,10 @@ update_linux(){
     sudo snap refresh
 }
 
+update_certificate(){
+  wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+}
+
 if [ -z "$1" ]; then
   echo "ERROR :: No parameters."
   usage
@@ -43,9 +47,10 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-echo "Starting Install communs app DevOps"
+echo "Starting Install commons APPs DevOps..."
 
 # Update Linux
+update_certificate
 update_linux
 
 #Criar um Loop para rodar os arquivos dentro da pasta APP
@@ -59,6 +64,8 @@ for i in ./app/*.sh; do
     sudo $i
 done
 
+sudo ./clean_ubuntu.sh
+
 # Git Config
-git config --global user.name ${NOME_GIT}
+git config --global user.name ${NAME_GIT}
 git config --global user.email ${EMAIL_GIT}
