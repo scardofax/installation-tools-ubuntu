@@ -1,6 +1,8 @@
 #!/bin/bash
 
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/kubernetes.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/kubernetes.gpg] http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list
 
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+sudo apt install kubeadm kubelet kubectl -y
 
+sudo apt-mark hold kubeadm kubelet kubectl -y
