@@ -43,7 +43,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-echo "Starting Install communs aap DevOps"
+echo "Starting Install communs app DevOps"
 
 # Update Linux
 update_linux
@@ -51,8 +51,10 @@ update_linux
 #Criar um Loop para rodar os arquivos dentro da pasta APP
 for i in ./app/*.sh; do
     FILENAME=${i##*/}
-    FILENAME="${FILENAME%.*}"   
-    echo "Installing ${FILENAME} ..."
+    FILENAME="${FILENAME%.*}"
+    echo "####################################"
+    echo "#     Installing ${FILENAME} ..."
+    echo "####################################"
     sudo chmod +x $i
     sudo $i
 done

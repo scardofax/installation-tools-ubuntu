@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt-get install gnome-clocks
+sudo apt-get install gnome-clocks -y

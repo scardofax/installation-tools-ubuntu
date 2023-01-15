@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt-get install chrome
+sudo apt-get install chrome -y
