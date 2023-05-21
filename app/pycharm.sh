@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo snap install pycharm-community
+sudo snap install pycharm-community --classic
+
