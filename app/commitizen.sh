@@ -4,4 +4,5 @@ sudo apt install python3-pip
 
 pip install --user -U Commitizen
 
-# Add cz in PATH .zshrc
+# Add "/home/juliano/.local/bin" in PATH .zshrc
+# export PATH=$HOME/bin:/home/juliano/.local/bin:/usr/local/bin:$PATH
