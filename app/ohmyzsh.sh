@@ -12,4 +12,8 @@ chsh -s /bin/zsh
 # plugins=(git terraform kubectl)
 # export PATH=$HOME/bin:/usr/julianogm/bin:$PATH
 
+# add the line below top of the ~/.bashrc file
+# vi ~/.bashrc
+# exec zsh
+
 ## Adjust terminal, VSCode, pycharm and Intellij for open zsh with default
