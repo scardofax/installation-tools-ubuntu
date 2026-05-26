@@ -2,5 +2,6 @@
 
 sudo snap install code --classic
 
-# Manter o arquivo aberto mesmo se n~ao alterar
-# workbench.editor.enablePreview
+### Configurações do VSCode
+# workbench.editor.enablePreview = false
+# terminal.integrated.defaultProfile.linux = zsh
